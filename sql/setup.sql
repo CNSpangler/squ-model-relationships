@@ -9,6 +9,14 @@ CREATE TABLE books (
   tags TEXT
 );
 
+CREATE TABLE authors (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  first_name TEXT NOT NULL,
+  middle_name TEXT NOT NULL,
+  last_name TEXT NOT NULL,
+  books text
+);
+
 -- CREATE TABLE pages (
 --   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 --   book_id BIGINT REFERENCES books(id),
