@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS books;
--- DROP TABLE IF EXISTS pages CASCADING;
+DROP TABLE IF EXISTS authors;
 
 CREATE TABLE books (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -12,9 +12,9 @@ CREATE TABLE books (
 CREATE TABLE authors (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   first_name TEXT NOT NULL,
-  middle_name TEXT NOT NULL,
+  middle_name TEXT,
   last_name TEXT NOT NULL,
-  books text
+  books TEXT
 );
 
 -- CREATE TABLE pages (
