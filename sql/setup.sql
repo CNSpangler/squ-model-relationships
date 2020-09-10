@@ -5,7 +5,8 @@ CREATE TABLE books (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   author TEXT NOT NULL,
   title TEXT NOT NULL,
-  genre TEXT NOT NULL
+  genre TEXT NOT NULL,
+  tags TEXT
 );
 
 -- CREATE TABLE pages (
